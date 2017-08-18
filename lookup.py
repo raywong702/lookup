@@ -6,7 +6,7 @@ import os.path
 
 
 async def lookup(address):
-    ''' address: ip addresses or hostnames
+    ''' address: ip address or hostname
     returns corresponding ip address or hostname of given address
     '''
     try:
