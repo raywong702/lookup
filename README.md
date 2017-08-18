@@ -19,7 +19,7 @@ google.com 172.217.6.238
 
 
 ```
-/lookup.py list | awk '{print $1}'
+./lookup.py list | awk '{print $1}'
 facebook.com
 twitter.com
 google.com
@@ -28,7 +28,7 @@ linkedin.com
 ```
 
 ```
-/lookup.py list | awk '{print $2}'
+./lookup.py list | awk '{print $2}'
 31.13.69.228
 104.244.42.1
 172.217.12.206
