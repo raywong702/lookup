@@ -73,3 +73,20 @@ youtube.com              172.217.12.142
 linkedin.com             108.174.10.10
 ...
 ```
+
+### Get output from file
+```
+awk '{print $2}' hostnames.out
+31.13.69.228
+104.244.42.129
+172.217.12.142
+172.217.12.142
+108.174.10.10
+...
+```
+
+### Exception example
+```
+grep EXCEPTION hostnames.out | head -1
+miitbeian.gov.cn         EXCEPTION: [Errno 8] nodename nor servname provided, or not known
+```
