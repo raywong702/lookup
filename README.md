@@ -3,6 +3,7 @@ Provides corresponding ip address or hostname for given input
 
 ## Usage
 Lookup will write EXCEPTION if cannot be resolved
+
 Inputs need not be uniform. Can be a mixture of ip and hostname
 
 ### Pass in hostnames file
