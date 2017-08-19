@@ -26,8 +26,11 @@ async def lookup(loop, addresses, max_length=None):
                     proto=socket.IPPROTO_TCP
                 )
                 lookup = lookup[0][4][0]
-            except socket.gaierror as e:
-                lookup = f'EXCEPTION: {e}'
+            except (socket.gaierror, UnicodeError) as e:
+                if hasattr(e, 'message'):
+                    lookup = f'EXCEPTION: {e.message}'
+                else:
+                    lookup = f'EXCEPTION: {e}'
 
         print(f'{address:{max_length}} {lookup}')
 
